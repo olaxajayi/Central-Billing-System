@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"> <!--displays site properly based n user's device-->
+	<title>Invoice Settings</title>
+	<link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93c111b61e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<section class="navigation">
+			<div class="logo-section">
+				<img class="logo" src="./assets/img/nassarawa.png">
+				<span class="material-icons md-18 close-button">close</span>
+			</div>
+
+			<div class="menu">
+
+				<ul class="menu-section">
+					<li class="each-menu-item" id="">
+						<a class="item-link" href="dashboard.html">
+							<span class="material-icons md-18 menu-arrows">grid_view</span>
+							<span>DASHBOARD</span>
+						</a>
+
+						<div class="vertical-greenbar"></div>
+					</li>
+
+
+					<li class="each-menu-item">
+						<a class="item-link" href="invoice-settings.html">
+							<span class="material-icons md-18">insert_drive_file</span>
+							<span>INVOICE SETTINGS</span>
+						</a>
+
+						<span class="material-icons md-18 menu-arrows expand-less-invoice">expand_less</span>
+						<span class="material-icons md-18 menu-arrows expand-more-invoice">expand_more</span>
+						<div class="vertical-greenbar"></div>
+					</li>
+
+					<div class="sub-options" id="#invoice-sub-options">
+						<li class="each-menu-item sub-option-item">
+							<a class="item-link" href="general-invoice.html">
+								<span>General Invoice</span>
+							</a>
+							
+							<div class="vertical-greenbar"></div>
+						</li>
+
+						<li class="each-menu-item sub-option-item">
+							<a class="item-link" href="#">
+								<span>Payment Reference</span>
+							</a>
+							
+							<div class="vertical-greenbar"></div>
+						</li>
+					</div>
+
+
+					<li class="each-menu-item">
+						<a class="item-link" href="#">
+							<span class="material-icons md-18">description</span>
+							<span>MDA</span>
+						</a>
+						<div class="vertical-greenbar"></div>
+					</li>
+
+
+					<li class="each-menu-item">
+						<a class="item-link" href="#">
+							<span class="material-icons md-18">content_paste</span>
+							<span>REPORT</span>
+						</a>
+
+						<span class="material-icons md-18 menu-arrows">chevron_right</span>
+						<div class="vertical-greenbar"></div>
+					</li>
+
+
+					<li class="each-menu-item tenant-settings">
+						<a class="item-link" href="#">
+							<span class="material-icons md-18">manage_accounts</span>
+							<span>TENANT SETTINGS</span>
+						</a>
+
+						<span class="material-icons md-18 menu-arrows expand-less-tenant">expand_less</span>
+						<span class="material-icons md-18 menu-arrows expand-more-tenant">expand_more</span>
+						<div class="vertical-greenbar"></div>
+					</li>
+
+					<div class="sub-options" id="#tenant-sub-options">
+						<li class="each-menu-item sub-option-item">
+							<a class="item-link" href="Password-setting.html">
+								<span>Password setting</span>
+							</a>
+							
+							<div class="vertical-greenbar"></div>
+						</li>
+
+						<li class="each-menu-item sub-option-item">
+							<a class="item-link" href="Admin-Settings.html">
+								<span>Admin Settings</span>
+							</a>
+							
+							<div class="vertical-greenbar"></div>
+						</li>
+
+						<li class="each-menu-item sub-option-item">
+							<a class="item-link" href="Settlement.html">
+								<span>Settlement</span>
+							</a>
+							
+							<div class="vertical-greenbar"></div>
+						</li>
+					</div>
+
+
+					<li class="each-menu-item">
+						<a class="item-link" href="#">
+							<span class="material-icons md-18">trending_up</span>
+							<span>REVENUE HEAD</span>
+						</a>
+						<div class="vertical-greenbar"></div>
+					</li>
+
+
+					<li class="each-menu-item">
+						<a class="item-link" href="#">
+							<span class="material-icons md-18">person_outline</span>
+							<span>USERS</span>
+						</a>
+
+						<span class="material-icons md-18 menu-arrows">chevron_right</span>
+						<div class="vertical-greenbar"></div>
+					</li>
+				</ul>
+				
+
+				<div class="toggle-button">
+					<button class="admin">Admin</button>
+					<p class="general">General</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="board-background">
+			<div class="invoice-settings-header">
+					<div class="modules">
+						<span class="material-icons hamburger">menu</span>
+
+						<div class="module-content payment-module">
+							<p>Payment reference</p>
+							<div class="module-bar payment-module-bar" id=""></div>
+						</div>
+					</div>
+
+					<div class="header-profile">
+						<span class="material-icons profile-icons">account_circle</span>
+						<p>Admin</p>
+						<span class="material-icons profile-icons">expand_circle_down</span>
+					</div>
+			</div>
+
+
+
+			<section class="data-hub">
+					<p class="search-text">Search for taxpayer</p>
+
+					<div class="search-bar">
+						<div class="bar">
+							<span class="material-icons search">search</span>
+							<input class="search-input" type="" name="" placeholder="Enter the tax payers phone number or TIN">
+						</div>
+						<button class="search-invoice">
+							<span class="material-icons search">search</span> Search
+						</button>
+					</div>
+
+					<section class="invoice-record">
+						<div class="invoice-record-header">
+							<p> <span class="bin">BIN</span> <span class="bin-no">   100027488596</span> </p>
+							<a href="#">View Invoice</a>
+						</div>
+
+						<br><hr class="invoice-horizontal-line">
+
+						<div class="table-wrap">
+							<table class="invoice-record-table">
+						  <tr class="IRT-head">
+						    <th class="first-column">S.No</th>
+						    <th class="second-column">Payment reference</th>
+						    <th>Provider</th>
+						    <th>Date</th>
+						    <th>Time</th>
+						  </tr>
+
+						  <tr>
+						    <td class="first-column">1</td>
+						    <td class="second-column">HA-104341000148414</td>
+						    <td>BANK 3D</td>
+						    <td>06, Aug 2020</td>
+						    <td>23:48:32</td>
+						  </tr>
+
+						  <tr>
+						    <td class="first-column">1</td>
+						    <td class="second-column">HA-104341000148414</td>
+						    <td>BANK 3D</td>
+						    <td>06, Aug 2020</td>
+						    <td>23:48:32</td>
+						  </tr>
+
+						  <tr>
+						    <td class="first-column">1</td>
+						    <td class="second-column">HA-104341000148414</td>
+						    <td>BANK 3D</td>
+						    <td>06, Aug 2020</td>
+						    <td>23:48:32</td>
+						  </tr>
+
+						  <tr>
+						    <td class="first-column">1</td>
+						    <td class="second-column">HA-104341000148414</td>
+						    <td>BANK 3D</td>
+						    <td>06, Aug 2020</td>
+						    <td>23:48:32</td>
+						  </tr>
+
+						  <tr>
+						    <td class="first-column">1</td>
+						    <td class="second-column">HA-104341000148414</td>
+						    <td>BANK 3D</td>
+						    <td>06, Aug 2020</td>
+						    <td>23:48:32</td>
+						  </tr>
+						</table>
+						</div>
+					</section>
+			</section>
+		</section>
+	</div>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>
